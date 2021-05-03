@@ -1,0 +1,76 @@
+/**GENERAL STYLE**/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+/*HEADER*/
+
+.header {
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .account {
+        background-color: #f16d7f;
+        .account_link {
+            font-size: 15px;
+            line-height: 32px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 13px 29px 13px 19px;
+        }
+    }
+}
+
+.line {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .menu__list {
+        list-style-type: none;
+        margin-left: 47px;        
+    }
+    .menu__link {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #222222;
+    }
+}
+
+
+
+
+
+/*CONTENT*/
+
+.top_baner {
+    height: 665px;
+    background-color: #e8e8e8;
+}
+.top_baner__image {
+    height: 665px;
+    border: 1px solid #000;    
+}
+/*FOOTER*/
