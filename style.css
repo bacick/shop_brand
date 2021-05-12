@@ -1,3 +1,4 @@
+/**VARIABLE**/
 /**GENERAL STYLE**/
 * {
   margin: 0;
@@ -8,7 +9,6 @@
 .container {
   max-width: 1145px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 /*HEADER*/
@@ -67,12 +67,14 @@
 .header .logo_search .search .search_form .input-search {
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
+  border-left: none;
+  border-right: none;
   text-align: start;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.025em;
   color: #a4a4a4;
-  padding: 10px 146px 10px 16px;
+  padding: 9px 146px 10px 16px;
 }
 
 .header .logo_search .search .search_form .button_search {
@@ -154,7 +156,6 @@
 
 .top_baner .top_baner__image {
   height: 665px;
-  border: 1px solid #000;
   background-image: url(img/topbaner.png);
   background-position: center;
   display: -webkit-box;
@@ -495,11 +496,16 @@
   height: 438px;
   background: url(img/subscribeback.png) center no-repeat;
   background-size: cover;
-  /*filter: opacity(75%);*/
+}
+
+.subscribe .subscriber_filter {
+  background-color: rgba(244, 244, 244, 0.5);
+  width: 100%;
+  height: 100%;
 }
 
 .subscribe .subscribe_blocks {
-  height: 100%;
+  height: 438px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,9 +525,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .subscribe .subscribe_blocks .review-block .review_img {
@@ -535,6 +538,21 @@
   font-style: italic;
   letter-spacing: 0.025em;
   color: #222224;
+}
+
+.subscribe .subscribe_blocks .review-block .review_text span {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+}
+
+.subscribe .subscribe_blocks .review-block .review_text__cite {
+  font-size: 12px;
+  padding-top: 15px;
+  font-weight: 300;
+  color: #222224;
+  line-height: 16px;
 }
 
 .subscribe .subscribe_blocks .sub-form-block {
@@ -588,5 +606,117 @@
   color: #ffffff;
 }
 
+.bottom_menu {
+  height: 458px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 110px;
+}
+
+.bottom_menu .description {
+  width: 428px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #898989;
+}
+
+.bottom_menu .description .description_p {
+  padding-top: 40px;
+}
+
+.bottom_menu .bottom_menu__block .bottom_menu__h2 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+  padding-top: 14px;
+  padding-bottom: 45px;
+}
+
+.bottom_menu .bottom_menu__block .bottom_menu__list {
+  list-style-type: none;
+}
+
+.bottom_menu .bottom_menu__block .bottom_menu__list .bottom_menu__link {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #898989;
+  text-decoration: none;
+}
+
 /*FOOTER*/
+.footer-bg {
+  height: 80px;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+.footer-bg .footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-bg .footer .footer-block_left {
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #7a7a7a;
+}
+
+.footer-bg .footer .footer-block_right .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.footer-bg .footer .footer-block_right .icon-list li {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  background-color: #fff;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-bg .footer .footer-block_right .icon-link {
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #b2b2b2;
+  padding: 0px 10px;
+}
 /*# sourceMappingURL=style.css.map */

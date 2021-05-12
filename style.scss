@@ -1,3 +1,7 @@
+/**VARIABLE**/
+
+$pink-style: #f16d7f;
+
 /**GENERAL STYLE**/
 * {
     margin: 0;
@@ -8,7 +12,7 @@
 .container {
     max-width: 1145px;
     margin: 0 auto;
-    border: 1px solid #000;
+   
 }
 
 /*HEADER*/
@@ -38,16 +42,17 @@
                     border-radius: 3px 0px 0px 3px;                    
                 }
 
-                .input-search {
-                    
+                .input-search {                    
                     background-color: #ffffff;
-                    border: 1px solid #e6e6e6;                 
+                    border: 1px solid #e6e6e6;
+                    border-left: none;
+                    border-right: none;                 
                     text-align: start;
                     font-size: 14px;                    
                     font-weight: 300;
                     letter-spacing: 0.025em;
                     color: #a4a4a4;
-                    padding: 10px 146px 10px 16px
+                    padding: 9px 146px 10px 16px
                 }
 
                 .button_search {
@@ -68,7 +73,7 @@
             margin-right: 24px;
         }
         .account {
-            background-color: #f16d7f;
+            background-color: $pink-style;
 
             .account_link {
                 font-size: 15px;
@@ -123,13 +128,12 @@
     margin-top: 17px;
     .top_baner__image {
         height: 665px;
-        border: 1px solid #000;
         background-image: url(img/topbaner.png);
         background-position: center;
         display: flex;
         align-items: center;
         .red_rectangle {
-            background-color: #f16d7f;
+            background-color: $pink-style;
             width: 12px;
             height: 92px;
             margin-right: 12px;
@@ -142,7 +146,7 @@
             color: #222222;
             .red_text {
                 font-size: 40px;
-                color: #f16d7f;
+                color: $pink-style;
             }
         }
         .text_baner span {
@@ -151,7 +155,7 @@
         }
         .red_text {
             font-size: 40px;
-            color: #f16d7f;
+            color: $pink-style;
         }
     }
 }
@@ -210,7 +214,7 @@
     }
     .text_block span {
         font-size: 30px;
-        color: #f16d7f
+        color: $pink-style
     }   
     }
 
@@ -270,7 +274,7 @@
                     line-height: 1.2;
                     font-weight: 700;
                     text-transform: uppercase;
-                    color: #f16d7f;
+                    color: $pink-style;
                     padding-top: 17px;
                     padding-left: 13px;
                     padding-bottom: 21px;
@@ -314,7 +318,7 @@
 
         .link_all-product {
             padding: 18px 24px;
-            background-color: #f16d7f;
+            background-color: $pink-style;
             text-decoration: none;
             font-size: 16px;
             line-height: 54px;
@@ -367,7 +371,7 @@
 
                 .image-baner_p-offer {
                     font-size: 53.7px;
-                    color: #f16d7f;
+                    color: $pink-style;
                 }
             }
             
@@ -418,9 +422,14 @@
     height: 438px;
     background: url(img/subscribeback.png) center no-repeat;
     background-size: cover;
-    /*filter: opacity(75%);*/
+    .subscriber_filter {       
+        background-color: rgba(244, 244, 244, 0.5);
+        width: 100%;
+        height: 100%;  
+    }
+    
     .subscribe_blocks {
-        height: 100%;        
+        height: 438px;        
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -428,7 +437,7 @@
             width: 50%;
             display: flex;
             justify-content: center;
-            align-items: center;
+
             .review_img {
                 padding-right: 20px;
             }
@@ -438,7 +447,20 @@
                 font-weight: 400;
                 font-style: italic;
                 letter-spacing: 0.025em;
+                color: #222224;                
+            }
+            .review_text span {
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 0.025em;
+                color: $pink-style;
+            }
+            .review_text__cite {
+                font-size: 12px;
+                padding-top: 15px;
+                font-weight: 300;
                 color: #222224;
+                line-height: 16px;
             }
         }
         
@@ -472,7 +494,7 @@
                     padding-right: 148px;
                 }
                 .sub-form-but {
-                    background-color: #f16d7f;
+                    background-color: $pink-style;
                     padding: 18px 20px;
                     border: 1px none ;                    
                     border-radius: 0px 23px 23px 0px;
@@ -487,4 +509,95 @@
     }
     
 }
+.bottom_menu {
+    height: 458px;    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    .description {        
+        width: 428px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #898989;
+        .description_imag{
+            
+        }
+        .description_p{
+            padding-top: 40px;
+        }
+    }
+    .bottom_menu__block {
+        .bottom_menu__h2{
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 700;
+            letter-spacing: 0.025em;
+            color: $pink-style;
+            padding-top: 14px;
+            padding-bottom: 45px;
+        }
+        .bottom_menu__list {
+            list-style-type: none;
+            .bottom_menu__link {
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 45px;
+                font-weight: 400;
+                letter-spacing: 0.025em;
+                color: #898989;
+                text-decoration: none;
+            }
+        }
+        
+    }
+
+}
 /*FOOTER*/
+
+.footer-bg {
+    height: 80px;
+    width: 100%;
+    background-color: #e6e6e6;
+    .footer {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-block_left {
+            font-size: 16px;
+            line-height: 42px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            color: #7a7a7a;
+        }
+        .footer-block_right {
+            .icon-list {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;                
+            }
+            .icon-list li {
+                height: 20px;
+                width: 20px;
+                margin-right: 8px;
+                background-color: #fff;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .icon-link {
+                font-size: 16px;
+                line-height: 42px;
+                font-weight: 400;
+                letter-spacing: 0.025em;
+                color: #b2b2b2;
+                padding: 0px 10px;
+                
+            }
+        }
+    }
+}
