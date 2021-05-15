@@ -81,7 +81,7 @@ input:focus {
             position: relative;
            
             .cart_list {
-                display: none;
+                display: flex;
                 flex-direction: column;
                 align-items: center;
                 position: absolute;
@@ -161,39 +161,44 @@ input:focus {
                     padding-top: 20px;
                     width: 230px;
                 }
-                .cart_list_box-bottom {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    
-                    .cart_list_item-bottom {
-                        padding: 20px 0px;
-                        margin-top: 10px;
-                        border: 1px solid $pink-style;
-                        width: 230px;
-                        .cart_link_bottom {
-                            font-size: 14px;
-                            line-height: 1.2;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            color: $pink-style;
-                            text-decoration: none;
-                            padding: 20px 70px;
-                        }
+                
+            }
+            .cart_list_box-bottom {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                .cart_list_item-bottom {
+                    padding: 20px 0px;
+                    margin-top: 10px;
+                    border: 1px solid $pink-style;
+                    width: 230px;
+
+                    .cart_link_bottom {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: $pink-style;
+                        text-decoration: none;
+                        text-align: center;
+                        padding-left: 70px;
                     }
-                    .cart_list_item-bottom:hover {
-                        background-color: $pink-style;
-                        .cart_link_bottom {
-                            color: #fff;
-                        }
+                }
+
+                .cart_list_item-bottom:hover {
+                    background-color: $pink-style;
+
+                    .cart_link_bottom {
+                        color: #fff;
                     }
                 }
             }
-            .cart:hover {
-                .cart_list {
-                    display: flex;
-                }
+        }
+        .cart:hover {
+            .cart_list {
+                display: flex;
             }
         }
         
@@ -309,6 +314,7 @@ input:focus {
                     position: absolute;
                     bottom: 12px;
                     right: 10px;
+                    
                     font-size: 22px;
                     line-height: 28px;
                     font-weight: 900;
@@ -320,7 +326,7 @@ input:focus {
         }
     }
 
-    .menu__link:hover .mega-menu {
+    .menu:hover .mega-menu {
         display: flex;
     }
 
@@ -436,6 +442,7 @@ input:focus {
             font-weight: 700;
             letter-spacing: 0.025em;
             color: #222222;
+            text-transform: uppercase;
         }
         .items_block_p {
             font-size: 14px;            
@@ -447,10 +454,7 @@ input:focus {
             margin-top: 60px;
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-            
-           
-                      
+            flex-wrap: wrap;        
             .item {
                 width: 261px;
                 /*height: 364px;*/                
@@ -820,4 +824,37 @@ input:focus {
     }
 }
 
-/**MENU**/
+/**SINGLEPAGE**/
+
+.single-page_block-arrivals {
+    .single-page_arrivals {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        .single-page_arrivals_h3 {
+            font-size: 24px;
+            line-height: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $pink-style;
+        }
+
+        .single-page_arrivals_breadcrumb {
+            .single-page_arrivals_breadcrumb_list {
+                display: flex;
+                list-style-type: none;
+                .single-page_arrivals_breadcrumb_li {}
+
+                .single-page_arrivals_breadcrumb_link {}
+            }
+
+        }
+
+        .single-page_slider {
+            .single-page_angle {}
+
+            .single-page_pictuer {}
+        }
+    }
+}
+
