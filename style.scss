@@ -78,12 +78,128 @@ input:focus {
         justify-content: center;
         .cart {
             margin-right: 24px;
+            position: relative;
+           
+            .cart_list {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top:50px;
+                left: -20px;
+                width: 262px;
+                background-color: #ffffff;
+                border-radius: 5px;
+                .cart_list_box {
+                    display: flex;
+                    justify-content: space-around;
+                    height: 100px;
+                    margin-top: 20px;
+                    .cart_list_img {
+                        margin-right: 15px;
+                    }
+                    .cart_list_box-text {
+                        padding-right: 55px;
+                        .cart_list_h5 {
+                            font-size: 12px;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #222222;
+                            padding-top: 10px;
+                        }
+
+                        .cart_list_stars {
+                            font-size: 12px;
+                            line-height: 1.2;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            color: #e4af48;
+                            padding-top: 10px;
+                        }
+
+                        .cart_list_prise {
+                            font-size: 12px;
+                            line-height: 1.2;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            color: #f16d7f;
+                            padding-top: 12px;
+                        }
+                    }
+                    
+                }
+                .cart_list_box-icon-del {
+                   height: 50%;
+                   margin-top: 30px;
+                    .cart_list_bottom-del {
+                       padding-top: 30px; 
+                       padding: 0;
+                       border: none;
+                       font: inherit;
+                       color: inherit;
+                       background-color: transparent;
+                       cursor: pointer;
+                        .cart_list_icon-del {
+                            font-size: 16px;
+                            line-height: 1.2;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            color: #c0c0c0;
+                        }
+                    }
+                    
+                }
+                .cart_list_total {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #222222;
+                    padding-top: 20px;
+                    width: 230px;
+                }
+                .cart_list_box-bottom {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    
+                    .cart_list_item-bottom {
+                        padding: 20px 0px;
+                        margin-top: 10px;
+                        border: 1px solid $pink-style;
+                        width: 230px;
+                        .cart_link_bottom {
+                            font-size: 14px;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: $pink-style;
+                            text-decoration: none;
+                            padding: 20px 70px;
+                        }
+                    }
+                    .cart_list_item-bottom:hover {
+                        background-color: $pink-style;
+                        .cart_link_bottom {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .cart:hover {
+                .cart_list {
+                    display: flex;
+                }
+            }
         }
+        
         .account {
             background-color: #fff;
-            border: 1px solid $pink-style;
-        
-            
+            border: 1px solid $pink-style;  
             .account_link {
                 font-size: 15px;
                 line-height: 32px;
@@ -93,7 +209,6 @@ input:focus {
                 color: $pink-style;
                 padding: 13px 19px 13px 19px;
             }
-            
         }
         .account:hover {
             background-color: $pink-style;
@@ -137,7 +252,7 @@ input:focus {
         position: absolute;
         top: 35px;
         right: 0px;
-        display: flex;
+        display: none;
         justify-content: space-around;
         background-color: #ffffff;
         border-radius: 5px;
@@ -147,13 +262,18 @@ input:focus {
         .mega-menu-block {
 
             .mega-menu_h3 {
-                font-size: 14px;
-                font-weight: 400;
-                text-transform: uppercase;
-                letter-spacing: 0.025em;
-                color: #232323;
+
                 padding-bottom: 8px;
                 padding-top: 20px;
+
+                .mega-menu_link_h3 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.025em;
+                    color: #232323;
+                    text-decoration: none;
+                }
             }
 
             .mega-menu_line {
@@ -163,14 +283,19 @@ input:focus {
             }
 
             .mega-menu_list {
-                font-size: 14px;
-                line-height: 25px;
-                font-weight: 400;
-                letter-spacing: 0.025em;
-                color: #646464;
+
                 list-style-type: none;
 
-                .mega-menu_li {}
+                .mega-menu_li {
+                    .mega-menu_link {
+                        text-decoration: none;
+                        font-size: 14px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        letter-spacing: 0.025em;
+                        color: #646464;
+                    }
+                }
             }
 
             .mega-menu-img {
@@ -191,12 +316,14 @@ input:focus {
                     letter-spacing: 0.025em;
                     color: #ffffff;
                 }
-            }  
+            }
         }
     }
-.menu__link:hover .mega-menu {
-    display: none;
-}
+
+    .menu__link:hover .mega-menu {
+        display: flex;
+    }
+
 }
 
 
