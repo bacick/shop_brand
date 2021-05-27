@@ -6,145 +6,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-singlepage.css">
     <title>Brand</title>
     <script src="https://kit.fontawesome.com/fc6a861f13.js" crossorigin="anonymous"></script>
     <title>Single page</title>
 </head>
 <body>
     <header class="">
-        <div class="header container">
-            <div class="logo_search" >
-                <div class="logo" ><a href="#"><img src="img/Logo .png" alt="logo"></a></div>
-                <div class="search" >
-                    <form action="#" class="search_form">
-                        <select name="" id="" class="browse">Browse</select>
-                        <input class="input-search" type="text" placeholder="Search for Item...">
-                        <button class="button_search" type="submit"><img src="img/loupe.png" alt="loupe"></button>
-                    </form>
-                </div>
-            </div>
-            <div class="cart_account" >
-                <div class="cart" >
-                    <a href="#"><img src="img/cart.png" alt="cart"></a>
-                    <div class="cart_list cart_list_contianer">
-                        <div class="cart_list_box">
-                            <div class="cart_list_img">
-                                <img src="img/img_cart_list1.png" alt="img_cart">
-                            </div>
-                            <div class="cart_list_box-text">
-                                <h5 class="cart_list_h5">Rebox Zane</h5>
-                                <p class="cart_list_stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </p>
-                                <p class="cart_list_prise">1 x $250</p>
-                            </div>
-                            <div class="cart_list_box-icon-del"><button type="" class="cart_list_bottom-del"><i class="fas fa-times-circle cart_list_icon-del"></i></button></div>
-                        </div>
-                        <div class="cart_list_box">
-                            <div class="cart_list_img">
-                                <img src="img/img_cart_list2.png" alt="img_cart">
-                            </div>
-                            <div class="cart_list_box-text">
-                                <h5 class="cart_list_h5">Rebox Zane</h5>
-                                <p class="cart_list_stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </p>
-                                <p class="cart_list_prise">1 x $250</p>
-                            </div>
-                            <div class="cart_list_box-icon-del"><button type="" class="cart_list_bottom-del"><i class="fas fa-times-circle cart_list_icon-del"></i></button></div>
-                        </div>
-                        <div class="cart_list_total">
-                            <div>TOTAL</div>
-                            <div>$500.00</div>
-                        </div>
-                        <div class="cart_list_box-bottom">
-                            <div class="cart_list_item-bottom"><a href="#" class="cart_li_bottom">Checkout</a></div>
-                            <div class="cart_list_item-bottom"><a href="#" class="cart_li_bottom">Go to cart</a></div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="account" ><a class="account_link" href="#">My account &nbsp;<i class="fas fa-caret-down"></i></a></div>
-            </div>
-            
-        </div>
-        <div class="line"></div>
-        <nav class="container menu-block">
-            <ul class="menu">
-                <li class="menu__list"><a class="menu__link" href="#">Home</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Man</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Women</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Accoseriese</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Featured</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Hot Deals</a></li>
-            </ul>
-          <!--  <div class="container mega-menu">
-            <div class="mega-menu-block">
-                <h3 class="mega-menu_h3"><a href="#" class="mega-menu_link_h3">Women</a></h3>
-                <hr class="mega-menu_line">
+      <div class="header container">
+        <div class="logo_search">
+          <div class="logo">
+            <a href="#"><img alt="logo" src="img/Logo%20.png" /></a>
+          </div>
+          <div class="search">
+            <form action="#" class="search_form">
+              <details class="browse">
+                <summary class="browse-titel">
+                  Browse
+                  <i class="fas fa-caret-down browse-angle-down"></i>
+                </summary>
+                <div class="browse__menu">
+                  <div class="pointer"></div>
+                  <div class="mega-menu-block">
+                    <h3 class="mega-menu_h3">
+                      <a class="mega-menu_link_h3" href="#">Women</a>
+                    </h3>
+                    <hr class="mega-menu_line" />
+                    <ul class="mega-menu_list">
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Dresses</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Tops</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Sweaters/Knits</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Jackets/Coats</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Blazers</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Denim</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Skirts/Shorts</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Accessories</a>
+                      </li>
+                      <li class="mega-menu_li">
+                        <a class="mega-menu_link" href="#">Leggings/Pant</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-block">
+                  <h3 class="mega-menu_h3">
+                  <a class="mega-menu_link_h3" href="#">Men</a>
+                </h3>
+                <hr class="mega-menu_line" />
                 <ul class="mega-menu_list">
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Dresses</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Tops</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Sweaters/Knits</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Jackets/Coats</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Blazers</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Denim</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Skirts/Shorts</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Accessories</a></li>
-                    <li class="mega-menu_li"><a href="#" class="mega-menu_link">Leggings/Pant</a>s</li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Dresses</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Tops</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Sweaters/Knits</a>
+                  </li>
                 </ul>
+              </div>
+                </div>
+                
+              </details>
+              <input
+                class="input-search"
+                placeholder="Search for Item..."
+                type="text"
+              />
+              <button class="button_search" type="submit">
+                <img alt="loupe" src="img/loupe.png" />
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="cart_account">
+          <div class="cart">
+            <a href="#"><img alt="cart" src="img/cart.png" /></a>
+            <div class="cart_list cart_list_contianer">
+              <div class="cart_list_box">
+                <div class="cart_list_img">
+                  <img alt="img_cart" src="img/img_cart_list1.png" />
+                </div>
+                <div class="cart_list_box-text">
+                  <h5 class="cart_list_h5">Rebox Zane</h5>
+                  <p class="cart_list_stars"></p>
+                  <p class="cart_list_prise">1 x $250</p>
+                </div>
+                <div class="cart_list_box-icon-del">,<a href="#"><i class="fas fa-times-circle cart_list_icon-del"></i></a></div>
+              </div>
+              <div class="cart_list_box">
+                <div class="cart_list_img">
+                  <img alt="img_cart" src="img/img_cart_list2.png" />
+                </div>
+                <div class="cart_list_box-text">
+                  <h5 class="cart_list_h5">Rebox Zane</h5>
+                  <p class="cart_list_stars"></p>
+                  <p class="cart_list_prise">1 x $250</p>
+                </div>
+                <div class="cart_list_box-icon-del">,<a href="#"><i class="fas fa-times-circle cart_list_icon-del"></i></a></div>
+              </div>
+              <div class="cart_list_total">
+                <div>TOTAL</div>
+                <div>$500.00</div>
+              </div>
+              <div class="cart_list_box-bottom">
+                <div class="cart_list_item-bottom">
+                  <a class="cart_link_bottom" href="#">Checkout</a>
+                </div>
+                <div class="cart_list_item-bottom">
+                  <a class="cart_link_bottom" href="#">Go to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account">
+            <a class="account_link" href="#">My account &nbsp;<i class="fas fa-caret-down browse-angle-down"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <nav class="container menu-block">
+        <ul class="menu">
+          <li class="menu__list">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#">Man</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#">Women</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#">Accoseriese</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#">Featured</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="#">Hot Deals</a>
+          </li>
+          <div class="mega-menu">
+            <div class="mega-menu_pointer"></div>
+            <div class="mega-menu-block">
+              <h3 class="mega-menu_h3">
+                <a class="mega-menu_link_h3" href="#">Women</a>
+              </h3>
+              <hr class="mega-menu_line" />
+              <ul class="mega-menu_list">
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Dresses</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Tops</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Sweaters/Knits</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Jackets/Coats</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Blazers</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Denim</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Skirts/Shorts</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Accessories</a>
+                </li>
+                <li class="mega-menu_li">
+                  <a class="mega-menu_link" href="#">Leggings/Pant</a>
+                </li>
+              </ul>
             </div>
             <div class="mega-menu-block">
-                <div class="mega-menu-blocks">
-                    <h3 class="mega-menu_h3"><a href="#" class="mega-menu_link_h3">Women</a></h3>
-                    <hr class="mega-menu_line">
-                    <ul class="mega-menu_list">
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Dresses</a></li>
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Tops</a></li>
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Sweaters/Knits</a></li>
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Jackets/Coats</a></li>
-                    </ul>
-                </div>
-                <div class="mega-menu-blocks">
-                    <h3 class="mega-menu_h3"><a href="#" class="mega-menu_link_h3">Women</a></h3>
-                    <hr class="mega-menu_line">
-                    <ul class="mega-menu_list">
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Dresses</a></li>
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Tops</a></li>
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Sweaters/Knits</a></li>                    
-                    </ul>
-                </div>
+              <div class="mega-menu-blocks">
+                <h3 class="mega-menu_h3">
+                  <a class="mega-menu_link_h3" href="#">Women</a>
+                </h3>
+                <hr class="mega-menu_line" />
+                <ul class="mega-menu_list">
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Dresses</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Tops</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Sweaters/Knits</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Jackets/Coats</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mega-menu-blocks">
+                <h3 class="mega-menu_h3">
+                  <a class="mega-menu_link_h3" href="#">Women</a>
+                </h3>
+                <hr class="mega-menu_line" />
+                <ul class="mega-menu_list">
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Dresses</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Tops</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="mega-menu-block">
-                <div class="mega-menu-blocks">
-                    <h3 class="mega-menu_h3"><a href="#" class="mega-menu_link_h3">Women</a></h3>
-                    <hr class="mega-menu_line">
-                    <ul class="mega-menu_list">
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Dresses</a></li>
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Tops</a></li>
-                        <li class="mega-menu_li"><a href="#" class="mega-menu_link">Sweaters/Knits</a></li>                    
-                    </ul>
-                </div>
-                <a href="#">
-                    <div class="mega-menu-img">
-                        <p class="mega-menu_p">Super<br>sale!</p>
-                    </div>
-                </a>
+              <div class="mega-menu-blocks">
+                <h3 class="mega-menu_h3">
+                  <a class="mega-menu_link_h3" href="#">Women</a>
+                </h3>
+                <hr class="mega-menu_line" />
+                <ul class="mega-menu_list">
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Dresses</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Tops</a>
+                  </li>
+                  <li class="mega-menu_li">
+                    <a class="mega-menu_link" href="#">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">
+                <div class="mega-menu-img">
+                  <p class="mega-menu_p">
+                    Super<br />
+                    sale!
+                  </p>
+                </div></a
+              >
             </div>
-        </div>-->
-        </nav>      
-
+          </div>
+        </ul>
+      </nav>
     </header>
     <section>
         <div class="single-page_block-arrivals">
@@ -300,80 +420,124 @@
         </div>
     </section>
 
-    <section>         
+    
 
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-        <section>
-        <div class="subscribe">
-            <div class="subscriber_filter">
-                <div class="container subscribe_blocks">
-                <div class="review-block">
-                    <div class="review_img">
-                        <img src="img/ellipse_3_2206.png" alt="review">
-                    </div>
-                    <div class="review_text">
-                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-                        <p class="review_text__cite"><span>Bin Burhan</span><br>Dhaka, Bd</p>
-                    </div>
-                </div>
-                
-                <div class="sub-form-block">
-                    <h3 class="sub-form_h3">Subscribe</h3>
-                    <p class="sub-form_p">FOR OUR NEWLETTER AND PROMOTION</p>
-                    <form action="" class="sub-form">
-                        <input type="text" placeholder="Enter Your Email" class="sub-form-input">
-                        <button class="sub-form-but">Subscribe</button>
-                    </form>
-                </div>
+    <section>
+      <div class="subscribe">
+        <div class="subscriber_filter">
+          <div class="container subscribe_blocks">
+            <div class="review-block">
+              <div class="review_img">
+                <img alt="review" src="img/ellipse_3_2206.png" />
+              </div>
+              <div class="review_text">
+                <p>
+                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi,a
+                  pulvinar purus condimentum a. Aliquam condimentum mattis neque
+                  sed pretium”
+                </p>
+                <p class="review_text__cite">
+                  <span>Bin Burhan</span><br />
+                  Dhaka, Bd
+                </p>
+              </div>
             </div>
+            <div class="sub-form-block">
+              <h3 class="sub-form_h3">Subscribe</h3>
+              <p class="sub-form_p">FOR OUR NEWLETTER AND PROMOTION</p>
+              <form action="" class="sub-form">
+                <input
+                  class="sub-form-input"
+                  placeholder="Enter Your Email"
+                  type="text"
+                />
+                <button class="sub-form-but">Subscribe</button>
+              </form>
             </div>
-            
-        </div> 
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
-        <div class="bottom_menu container">
-            <div class="description">
-                <img src="img/Logo .png" alt="logo" class="description_imag">
-                <p  class="description_p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
-                <p  class="description_p">Efficiently plagiarize 24/365 action items and focused infomediaries.Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
-            </div>
-            <div class="bottom_menu__block">
-                <h2 class="bottom_menu__h2">COMPANY</h2>
-                <ul class="bottom_menu__list">
-                    <li><a href="#" class="bottom_menu__link">Home</a></li>
-                    <li><a href="#" class="bottom_menu__link">Shop</a></li>
-                    <li><a href="#" class="bottom_menu__link">About</a></li>
-                    <li><a href="#" class="bottom_menu__link">How It Works</a></li>
-                    <li><a href="#" class="bottom_menu__link">Contact</a></li>
-                </ul>
-            </div>
-            <div class="bottom_menu__block">
-                <h2 class="bottom_menu__h2">INFORMATION</h2>
-                <ul class="bottom_menu__list">
-                    <li><a href="#" class="bottom_menu__link">Tearms & Condition</a></li>
-                    <li><a href="#" class="bottom_menu__link">Privacy Policy</a></li>
-                    <li><a href="#" class="bottom_menu__link">How to Buy</a></li>
-                    <li><a href="#" class="bottom_menu__link">How to Sell</a></li>
-                    <li><a href="#" class="bottom_menu__link">Promotion</a></li>
-                </ul>
-            </div>
-            <div class="bottom_menu__block">
-                <h2 class="bottom_menu__h2">SHOP CATEGORY</h2>
-                <ul class="bottom_menu__list">
-                    <li><a href="" class="bottom_menu__link">Men</a></li>
-                    <li><a href="" class="bottom_menu__link">Women</a></li>
-                    <li><a href="" class="bottom_menu__link">Child</a></li>
-                    <li><a href="" class="bottom_menu__link">Apparel</a></li>
-                    <li><a href="" class="bottom_menu__link">Brows All</a></li>
-                </ul>
-            </div>
+      <div class="bottom_menu container">
+        <div class="description">
+          <a href="#"
+            ><img alt="logo" class="description_imag" src="img/Logo%20.png"
+          /></a>
+          <p class="description_p">
+            Objectively transition extensive data rather than cross functional
+            solutions. Monotonectally syndicate multidisciplinary materials
+            before go forward benefits. Intrinsicly syndicate an expanded array
+            of processes and cross-unit partnerships.
+          </p>
+          <p class="description_p">
+            Efficiently plagiarize 24/365 action items and focused
+            infomediaries.Distinctively seize superior initiatives for wireless
+            technologies. Dynamically optimize.
+          </p>
         </div>
-        
+        <div class="bottom_menu__block">
+          <h2 class="bottom_menu__h2">COMPANY</h2>
+          <ul class="bottom_menu__list">
+            <li>
+              <a class="bottom_menu__link" href="Index.html">Home</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">Shop</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">About</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">How It Works</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom_menu__block">
+          <h2 class="bottom_menu__h2">INFORMATION</h2>
+          <ul class="bottom_menu__list">
+            <li>
+              <a class="bottom_menu__link" href="#">Tearms & Condition</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">How to Buy</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">How to Sell</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="#">Promotion</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom_menu__block">
+          <h2 class="bottom_menu__h2">SHOP CATEGORY</h2>
+          <ul class="bottom_menu__list">
+            <li>
+              <a class="bottom_menu__link" href="">Men</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="">Women</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="">Child</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="">Apparel</a>
+            </li>
+            <li>
+              <a class="bottom_menu__link" href="">Brows All</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <footer>
