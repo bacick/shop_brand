@@ -222,6 +222,14 @@ select:focus {
   cursor: pointer;
 }
 
+.header .cart_account .cart .cart_list .cart_list_box-icon-del .cart_list_icon-del {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c0c0c0;
+}
+
 .header .cart_account .cart .cart_list .cart_list_total {
   display: -webkit-box;
   display: -ms-flexbox;

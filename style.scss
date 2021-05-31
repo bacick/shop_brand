@@ -117,10 +117,11 @@ select:focus {
     .cart_account {
         display: flex;
         justify-content: center;
+
         .cart {
             margin-right: 24px;
             position: relative;
-           
+
             .cart_list {
                 display: none;
                 flex-direction: column;
@@ -131,16 +132,20 @@ select:focus {
                 width: 262px;
                 background-color: #ffffff;
                 border-radius: 5px;
+
                 .cart_list_box {
                     display: flex;
                     justify-content: space-around;
                     height: 100px;
                     margin-top: 20px;
+
                     .cart_list_img {
                         margin-right: 15px;
                     }
+
                     .cart_list_box-text {
                         padding-right: 55px;
+
                         .cart_list_h5 {
                             font-size: 12px;
                             line-height: 1.2;
@@ -168,20 +173,29 @@ select:focus {
                             padding-top: 12px;
                         }
                     }
-                    
+
                 }
+
                 .cart_list_box-icon-del {
-                   height: 50%;
-                   margin-top: 30px;
+                    height: 50%;
+                    margin-top: 30px;
+
                     .cart_list_bottom-del {
-                       padding-top: 30px; 
-                       padding: 0;                       
-                       background-color: transparent;
-                       cursor: pointer;
-                        
+                        padding-top: 30px;
+                        padding: 0;
+                        background-color: transparent;
+                        cursor: pointer;
                     }
-                    
+
+                    .cart_list_icon-del {
+                        font-size: 16px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        color: #c0c0c0;
+                    }
                 }
+
                 .cart_list_total {
                     display: flex;
                     justify-content: space-between;
@@ -193,8 +207,9 @@ select:focus {
                     padding-top: 20px;
                     width: 230px;
                 }
-                
+
             }
+
             .cart_list_box-bottom {
                 display: flex;
                 flex-direction: column;
@@ -228,15 +243,17 @@ select:focus {
                 }
             }
         }
+
         .cart:hover {
             .cart_list {
                 display: flex;
             }
         }
-        
+
         .account {
             background-color: $pink-style;
-            border: 1px solid $pink-style;  
+            border: 1px solid $pink-style;
+
             .account_link {
                 font-size: 15px;
                 line-height: 32px;
@@ -247,8 +264,10 @@ select:focus {
                 padding: 13px 19px;
             }
         }
+
         .account:hover {
             background-color: #fff;
+
             .account_link {
                 color: $pink-style;
             }
