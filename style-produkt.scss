@@ -33,47 +33,30 @@ select:focus {
     display: flex;
     padding: 0% 2%;
     .sidebar {
-        border: 1px solid #000;
-        width: 28%;
-        .sidebar__box {
-            height: 40px;
-            border-left: 5px solid $pink-style;
-            border-bottom: 1px solid #ebebeb;
-            /* display: flex;
-            justify-content: start;
-            margin-bottom: 20px; */
-        }
-        .sidebar__red_box {
-            height: 100%;   
-            width: 5px;
-            background-color: $pink-style;
-            margin-right: 5%;
-        }
-        .sidebar__box_item {
-           
-           
+        width: 28%;        
+        .sidebar__box_item {            
            .sidebar__box_input {
                height: 0;
                width: 0;
                appearance: none;
                position: absolute;
-           }
-           .sidebar__box_input:checked .sidebar__box_list {
-               display: block;
-           }
+           }           
            .sidebar__box_title {
                display: block;
                position: relative;
                cursor: pointer;
-               transition: background .2s ease-out;
                font-size: 14px;
                line-height: 10px;
                font-weight: 700;
                text-transform: uppercase;
                color: #6f6e6e;
                padding: 15px 10px;
-           }
-                      
+               border-left: 5px solid $pink-style;
+               border-bottom: 1px solid #ebebeb;
+           }                      
+        }
+        .sidebar__box_input:checked~ .sidebar__box_list {
+            display: block;
         }
         .sidebar__box_item:hover .sidebar__box_title {
             color: $pink-style;
@@ -84,7 +67,7 @@ select:focus {
             font-weight: 400;
             color: #6f6e6e;
             display: none;
-            padding-left: 15px;
+            padding: 20px 0 35px 15px;
             .sidebar__list {
                 list-style-type: none;
             }
@@ -95,26 +78,51 @@ select:focus {
                 color: #6f6e6e;
                 text-decoration: none;
                 display: block;
-            }
-            
-        }
-        
+            }            
+        }        
         .sidebar__box_title::after {
             content: '\f0d7';
             font-family: "Font Awesome 5 free";
-            margin-left: 60%;
+            position: absolute;
+            right: 2%;
         }
-        details[open] .titel::after {
+        .sidebar__box_input:checked~ .sidebar__box_title::after {
             content: '\f0d8';
             color: $pink-style;
-            margin-left: 100%;
-            border: 1px solid green;
+            margin-left: 60%;
         }
-        details[open] .titel {
+        .sidebar__box_input:checked~ .sidebar__box_title {
             color: $pink-style;
         }
         .sidebar__box:hover .titel {
             color: $pink-style;
+        }
+    }
+    .top-filter__sort {
+        width: 100%;
+        height: 50px;
+        background-color: #f3f3f3;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        .top-filter__sort_p {
+            margin-left: 10px;
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #6f6e6e;
+            background-color: #ffffff;
+            border: 1px solid #ebebeb;
+            padding: 4px 12px;
+        }
+        .top-filter__sort_select {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #6f6e6e;
+            background-color: #ffffff;
+            border: 1px solid #ebebeb;
+            padding: 8px 12px;
         }
     }
     .catalog {
