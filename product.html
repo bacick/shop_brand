@@ -130,9 +130,48 @@
         <div class="catalog">
           <div class="top-filter">
             <div class="top-filter__category">
-              <div class="top-filter__trending"></div>
-              <div class="top-filter__size"></div>
-              <div class="top-filter__prise"></div>
+              <div class="top-filter__item">
+                <p class="top-filter__item_p">Trending now</p>
+                <div class="top-filter__trending-box">
+                  <input class="top-filter__trending_input" type="checkbox" id="trend_1" />
+                  <label class="top-filter__trending_title" for="trend_1">Bohemian</label>
+                  <input class="top-filter__trending_input" type="checkbox" id="trend_2" />
+                  <label class="top-filter__trending_title" for="trend_2">Floral</label>
+                  <input class="top-filter__trending_input" type="checkbox" id="trend_3" />
+                  <label class="top-filter__trending_title" for="trend_3">Lace</label>
+                  <input class="top-filter__trending_input" type="checkbox" id="trend_4" />
+                  <label class="top-filter__trending_title" for="trend_4">Floral</label>
+                  <input class="top-filter__trending_input" type="checkbox" id="trend_5" />
+                  <label class="top-filter__trending_title" for=trende_5">Lace</label>
+                  <input class="top-filter__trending_input" type="checkbox" id="trend_6" />
+                  <label class="top-filter__trending_title" for="trend_6">Bohemian</label>
+                </div>
+              </div>
+              <div class="top-filter__item">
+                <p class="top-filter__item_p">SIZE</p>
+                <div class="top-filter__size-box">
+                  <input class="top-filter__size_input" type="checkbox" id="size_1" />
+                  <label class="top-filter__size_title" for="size_1">M</label>
+                  <input class="top-filter__size_input" type="checkbox" id="size_2" />
+                  <label class="top-filter__size_title" for="size_2">S</label>
+                  <input class="top-filter__size_input" type="checkbox" id="size_3" />
+                  <label class="top-filter__size_title" for="size_3">L</label>
+                  <input class="top-filter__size_input" type="checkbox" id="size_4" />
+                  <label class="top-filter__size_title" for="size_4">XL</label>
+                  <input class="top-filter__size_input" type="checkbox" id="size_5" />
+                  <label class="top-filter__size_title" for="size_5">XXL</label>
+                  <input class="top-filter__size_input" type="checkbox" id="size_6" />
+                  <label class="top-filter__size_title" for="size_6">XXXL</label>
+                </div>
+
+              </div>
+              <div class="top-filter__prise">
+								<p class="top-filter__prise_p">price</p>
+                <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+                  <input name="flevel" id="flying" type="range" min="0" max="1000" value="100" step="1"> 
+                  <p class="top-filter__prise_p">$<output for="flying" name="level">1000</output></p>
+                </form>
+              </div>
             </div>
             <div class="top-filter__sort">
               <p class="top-filter__sort_p">Sort By</p>

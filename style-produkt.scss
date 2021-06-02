@@ -98,44 +98,125 @@ select:focus {
             color: $pink-style;
         }
     }
-    .top-filter__sort {
-        width: 100%;
-        height: 50px;
-        background-color: #f3f3f3;
-        display: flex;
-        align-items: center;
-        margin-bottom: 50px;
-        .top-filter__sort_p {
-            margin-left: 10px;
-            font-size: 14px;
-            line-height: 26px;
-            font-weight: 400;
-            color: #6f6e6e;
-            background-color: #ffffff;
-            border: 1px solid #ebebeb;
-            padding: 4px 12px;
-        }
-        .top-filter__sort_select {
-            font-size: 14px;
-            line-height: 26px;
-            font-weight: 400;
-            color: #6f6e6e;
-            background-color: #ffffff;
-            border: 1px solid #ebebeb;
-            padding: 8px 12px;
-        }
-    }
+    
     .catalog {
         border: 1px solid #000;
         width: 100%;
         .top-filter__category {
             border: 1px solid #000;
             height: 115px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .top-filter__item {
+                width: 30%;
+                .top-filter__item_p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #6f6e6e;
+                }
+                .top-filter__trending-box {
+                    display: flex;
+                    flex-flow: wrap;
+                    .top-filter__trending_title {
+                        font-size: 14px;
+                        line-height: 26px;
+                        font-weight: 400;
+                        color: #6f6e6e;
+                        cursor: pointer;
+                    }
+                    .top-filter__trending_title:not(:last-child):after {
+                        content: "|";
+                        color: #dfdfdf;
+                        margin: 0 5px;
+                    }
+                    .top-filter__trending_input {
+                        height: 0px;
+                        width: 0px;
+                        appearance: none;
+                        position: absolute;
+                    }
+                    .top-filter__trending_input:checked ~ .top-filter__trending_title{
+                        color:$pink-style;
+                    }
+                }
+                .top-filter__size-box {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-flow: wrap;
+                    .top-filter__size_input {
+                        cursor: pointer;
+                    }
+                    .top-filter__size_title {
+                        font-size: 14px;
+                        line-height: 13px;
+                        font-weight: 400;
+                        color: #6f6e6e;
+                        cursor: pointer;
+                    }
+                }    
+            }
+
         }
+        .top-filter__prise {
+            .top-filter__prise_p {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #6f6e6e;
+            }
+            .top-filter__prise_range {
+
+            }
+        }
+        .top-filter__trending {
+                display: flex;
+                flex-direction: column;
+
+                .top-filter__trending_p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #6f6e6e;
+                }
+                .top-filter__trending-box {
+
+                }
+            }
         .top-filter__sort {
-            border: 1px solid #000;
+            width: 100%;
             height: 50px;
+            background-color: #f3f3f3;
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .top-filter__sort_p {
+                margin-left: 10px;
+                font-size: 14px;
+                line-height: 27px;
+                font-weight: 400;
+                color: #6f6e6e;
+                background-color: #ffffff;
+                border: 1px solid #ebebeb;
+                padding: 4px 12px;
+            }
+
+            .top-filter__sort_select {
+                font-size: 14px;
+                line-height: 26px;
+                font-weight: 400;
+                color: #6f6e6e;
+                background-color: #ffffff;
+                border: 1px solid #ebebeb;
+                padding: 8px 12px;
+            }
         }
+    
         .product {
             display: flex;
             flex-direction: column;           
