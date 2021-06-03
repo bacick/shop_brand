@@ -364,7 +364,7 @@ select:focus {
      }
 
      .mega-menu-img {
-         background: url(img/img_mega_menu.png) center no-repeat;
+         background: url(../img/img_mega_menu.png) center no-repeat;
          background-size: cover;
          min-height: 118px;
          margin-top: 20px;
@@ -394,7 +394,7 @@ select:focus {
     margin-top: 17px;
     .top_baner__image {
         height: 665px;
-        background-image: url(img/topbaner.png);
+        background-image: url(../img/topbaner.png);
         background-position: center;
         display: flex;
         align-items: center;
@@ -440,14 +440,14 @@ select:focus {
             }
             .block_men{
                 height: 524px;
-                background: url(img/blockmen.png) center no-repeat ;
+                background: url(../img/blockmen.png) center no-repeat ;
                 background-size: cover;
                 margin-bottom: 20px;
                 
             }
             .block_accesories {
                 height: 261px;
-                background: url(img/blockaccesories.png) center no-repeat;
+                background: url(../img/blockaccesories.png) center no-repeat;
                 background-size: cover;
             }
         }
@@ -455,14 +455,14 @@ select:focus {
             width: 50%;
             .block_women {
                 height: 251px;
-                background: url(img/blockwomen.png) center no-repeat;
+                background: url(../img/blockwomen.png) center no-repeat;
                 background-size: cover;
                 margin-bottom: 20px;
             }
 
             .block_kids {
                 height: 533px;
-                background: url(img/blockkids.png) center no-repeat ;
+                background: url(../img/blockkids.png) center no-repeat ;
                 background-size: cover;
             }
         } 
@@ -613,10 +613,10 @@ select:focus {
 
         .image-baner {
             width: 767px;
-            background: url(img/rectangle_21_copy_1314.png) no-repeat center;
+            background: url(../img/rectangle_21_copy_1314.png) no-repeat center;
             
             .image_baner-opracity {
-                background: url(img/layer_39_1321.png) no-repeat center;
+                background: url(../img/layer_39_1321.png) no-repeat center;
                 width: 100%;
                 height: 100%;
             }
@@ -687,7 +687,7 @@ select:focus {
 }   
 .subscribe {
     height: 438px;
-    background: url(img/subscribeback.png) center no-repeat;
+    background: url(../img/subscribeback.png) center no-repeat;
     background-size: cover;
     .subscriber_filter {       
         background-color: rgba(244, 244, 244, 0.5);
