@@ -526,10 +526,7 @@ select:focus {
         align-items: center;
         margin-top: 45px;
         margin-bottom: 60px;
-        .product-button {
-            background-color: $pink-style;
-            border: 1px solid $pink-style;
-
+        .product-button {          
             .product-button_link {
                 font-size: 14px;
                 line-height: 32px;
@@ -538,16 +535,14 @@ select:focus {
                 text-transform: uppercase;
                 text-decoration: none;
                 color: #fff;
+                background-color: $pink-style;
+                border: 1px solid $pink-style;
                 padding: 13px 19px;
             }
         }
-
-        .product-button:hover {
+        .product-button_link:hover {
             background-color: #fff;
-
-            .product-button_link {
-                color: $pink-style;
-            }
+            color: $pink-style; 
         }
     }
 }
@@ -557,26 +552,76 @@ select:focus {
     display: flex;
     justify-content: space-between;
     .form-box__adress {
+        width: 33%;
         display: flex;
         flex-direction: column;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+        padding-right: 2%;
+        .form-box_p {
+            margin-bottom: 22px;
+        }
+        .form-box_p-coupon {
+            font-size: 10px;
+            line-height: 1.2;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
         .form-box__form {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
         }
         .form-box__adress_input {
-            width: 355px;
             height: 45px;
             border: 1px solid #eaeaea;
             font-size: 13px;
             line-height: 1.2;
             font-weight: 300;
             color: #b1b1b1;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .form-box__button {
+            width: max-content;
+            font-size: 11px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            padding: 10px 15px;
+            cursor: pointer;
         }
     }
     .checkout {
         width: 360px;
         height: 214px;
         background-color: #f5f3f3;
+       .checkout_text-box {
+           width: 100%;
+           font-size: 11px;
+           line-height: 1.2;
+           font-weight: 400;
+           text-transform: uppercase;
+           color: #4a4a4a;
+           padding: 40px 42px;
+           border-bottom: 1px solid #e2e2e2;
+       }
+       .checkout_text-box_p {
+           font-size: 16px;
+           line-height: 1.2;
+           font-weight: 700;
+           text-transform: uppercase;
+           color: #222222;
+       }
+       .checkout_text-box_p span {
+           color:$pink-style;
+           margin-left: 20px;           
+       }
     }
 }
 .subscribe {
