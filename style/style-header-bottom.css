@@ -440,6 +440,7 @@ select:focus {
   height: 438px;
   background: url(../img/subscribeback.png) center no-repeat;
   background-size: cover;
+  margin-bottom: 110px;
 }
 
 .subscribe .subscriber_filter {
